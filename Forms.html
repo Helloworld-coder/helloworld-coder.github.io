@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entry</title>
+    </head>
+    <body>
+        <form name="frmDataEntry" action="login.html" method="POST">
+            <h1>Login Page</h1>
+            <p>Name: </p><input type="text" name="textUserName" id="textUserName" placeholder="enter your username" required value="">
+            <p>Password :</p><input type="password" name="pwdPassword" id="pwdPassword" value="" placeholder="enter minimun 4 characters" required minlength="4">
+            <p>Confirm Password :</p><input type="password" name="pwdConfirmPassword" value="" required>
+            <p>Gender :</p><input name="radioGender" id="radioGender" type="radio" value="M" checked>Male
+            <input type="radio" name="radioGender" id="radioGender" value="F">Female
+            <p>Skills :</p><input type="checkbox" name="checkboxSkill" id="checkboxSkill" value="PostgreSQL">SQL
+            <input type="checkbox" name="checkboxSkill" id="checkboxSkill" value="html">HTML
+            <input type="checkbox" name="checkboxSkill" id="checkboxSkill" value="Python">PY<br>
+            <p>Working element :</p>
+            <select name="selectElement">
+                <option value="Lists">Lists</option>
+                <option value="Tables">Tables</option>
+                <option value="Forms">Forms</option>
+            </select>
+            <p>Address :</p>
+            <textarea name ="textarea" row="10" column="10"></textarea> <br>  
+            <input type="Submit" value="enter">        
+    
+           
+        </form>
+    </body>
+</html>
