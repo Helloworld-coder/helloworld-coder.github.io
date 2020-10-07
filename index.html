@@ -1,49 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title></title>
-    </head>
-    <body style="background-image: url('background.jpg');background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
-        <h1><p style="text-align: center; color:rgb(60, 24, 20);" title="Thanks to My Guru Parthi Mams">HTML</p></h1>
-        <h2>The Page for everyone to <strong title="jana" style="color:darkgreen;font-size: 30px; font-family: Verdana;">play</strong> with websites</h2>
-        <header>
-            <nav style="text-align: center;">
-                <h1> Engine in progress</h1>
-                <h4> Intializating.....</h4>
-                <a href="Git.html"><img src="Github.png" width="100" height="60"></a>
-                <a href="tags.html"><img src="html.jpg" width="100" height="60"></a>
-                <a href="Forms.html"><img src="Forms.jpeg" width="100" height="60"></a>
-                <a href="ganapathibappa.html"><img src="Ganapathi.jpg" width="100" height="60"></a>
-            </nav>
-        </header>
-        <section>
-            <h2>we are working on the below navigation.</h2>
-            <ol><h3>
-               <li>Header</li>
-                    <ul>
-                        <li>nav</li>
-                    </ul>
-                <li>Section</li>
-                <li>Article</li>
-                <li>Aside</li>
-                <li>Footer</li>
-                    <ul>
-                        <li>nav</li>
-                    </ul>
-            </ol></h3>
-        </section>
-            <section>
-                <h3>Nested section checking in progress</h3>
-                <a href="Forms.html"><img src="Register.jpeg" width="150"></a>
+        <meta charset="utf-8">
+        <title>
+            Styles conference
+        </title>
+        <link href="main.css" type="text/css" rel=stylesheet>
+        <body>
+            <header class="container group">
+                <h1 class="logo"><a href="index.html">Styles<br>conference</a></h1>
+                <h3 class="tagline">August 24&ndash;26th &mdash; Chicago, IL</h3>
+                <nav class="primary-nav">
+                    <a href="index.html">Home</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="venue.htm">Venue</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </header>
+            <section class="container">
+                <section class="hero container">
+                    <h2>Dedicated to the Craft of Building Websites</h2>
+                    <p>Every year the brightest web designers and front-end developers descend on Chicago to discuss the latest technologies. Join us this August!</p>
+                    <a href="register.html" class="btn btn-alt">Register Now</a>
+                </section>
+                <section class="col-1-3">
+                    <a href="speakers.html">
+                    <h5>Speakers</h5>
+                    <h3>World-class speakers</h3>
+                    </a>
+                    <p>Joining us from all around the world are over twenty fantastic speakers, here to share their stories.</p>
+                </section><!--
+                --><section class="col-1-3">
+                    <a href="schedule.html">
+                    <h5>Schedule</h5>
+                    <h3>Three Inspiring days</h3>
+                    </a>
+                    <p>Enjoy three inspiring and action packed days</p>
+                </section><!--
+                --><section class="col-1-3">
+                    <a href="venue.html">
+                    <h5>Venue</h5>
+                    <h3>The Chicago theatre</h3>
+                    </a>
+                    <p>Within the heart down Chicago</p>
+                </section>
             </section>
-        <footer>
-            <small>Footer font check inside small element</small>
-            <nav style="text-align: center;">
-                <a href="Git.html">Git commands></a>
-                <a href="Forms.html">Form elements</a>
-                <a href="tags.html">Html tags</a>
-                <a href="ganapathibappa.html">ganapathibappa song</a>
-            </nav>
-        </footer>
-    </body>
+            <footer class="primary-footer container group">
+                <small>&copy; Styles conference</small>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="speakers.html">Speakers</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="venue.htm">Venue</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </footer>
+
+        </body>
+    </head>
 </html>

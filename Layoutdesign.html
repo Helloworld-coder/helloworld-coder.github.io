@@ -1,52 +1,141 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
+    <meta charset="utf-8">
     <head>
-        <title>
-            layout design
-        </title>
-        <style type=text/css>
-        #name
-        {
-            float:left;
-            background-color: palegoldenrod;
-            height: 35px;
-            width: 50%;
-            padding-top: 15px;
-        }
-        #month
-        {
-            float: left;
-            background-color: rgb(134, 182, 102);
-            height: 35px;
-            width: 50%;
-            padding-top:15px;
-            text-align: right;
-        }
-        #nav
-        {
-            margin:auto;
-            text-align: center;
-        }
-        </style>
+        <title>Layouts testing</title>
     </head>
-    <body>
-        <div id="main container">
-            <div id=header>
-                <div id="name">
-                    Jana
-                </div>
-                <div id="month">
-                    April
-                </div>
-                <div id="nav">
-                    <div>
-                        <a href="float.html">float</a>
-                        <a href="ndb.jpeg">ndb</a>
-                        <a href="carbon.png">carbon</a>
-                        <a href="learn.html" target="-self">learn html</a>
-                    </div>
-                </div>
+    <style type="text/css">
+    .header
+    {
+        width: 900px;
+        height: 100px;
+        background-color: rgb(82, 139, 92);
+        margin:10px;
+        padding: 20px;
+    }
+    .first
+    {
+        background-color: violet;
+        width: 240px;
+        float: left;
+        margin: 10px;   
+        height: 60px;
+    }
+    .second
+    {
+        background-color: indigo;
+        width: 360px;
+        float: left;
+        margin :10px;
+        height: 60px;
+    }
+    .third
+    {
+        background-color: blue;
+        width: 240px;
+        float: left;
+        margin : 10px;
+        height: 60px;
+    }
+    .section1
+    {
+        background-color: lightpink;
+        width: 440px;
+        height: 380px;
+        margin: 10px;
+        float: left;
+    }
+    .section2
+    {
+        background-color: rgb(226, 217, 196);
+        width: 480px;
+        height: 380px;
+        margin: 10px;  
+        float: left;
+    }
+    .content1
+    {
+        background-color: rgb(219, 175, 223);
+        width: 230px;
+        height: 180px;
+        margin: 10px;
+    }
+    .content2
+    {
+        background-color: rgb(195, 236, 195);
+        width: 230px;
+        height: 170px; 
+        margin: 10px;
+    }
+    .content3
+    {
+        width:230px;
+        height:170px;
+        background-color:orange;
+        margin:5px;
+        float: left;
+    }
+    .content4
+    {
+        width:230px;
+        height:170px;
+        background-color:orange;
+        margin:5px;
+        float: left;
+    }
+    .content5
+    {
+        width:230px;
+        height:170px;
+        background-color:orange;
+        margin:5px;
+        clear: left;
+        float: left;
+    }
+    .content6
+    {
+        width:230px;
+        height:170px;
+        background-color:orange;
+        margin:5px;
+        float: left;
+    }
+    </style>
 
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="first">
+                    first
+                </div>
+                <div class="second">
+                    second
+                </div>
+                <div class="third">
+                    third
+                </div>
+            </div>
+            <div class="section1">
+                <div class="content1">
+
+                </div>   
+                <div class="content2">
+
+                </div>
+            </div>
+            <div class="section2">
+                <div class="content3">
+
+                </div>
+                <div class="content4">
+
+                </div>
+                <div class="content5">
+
+                </div>
+                <div class="content6">
+
+                </div>
             </div>
         </div>
     </body>
