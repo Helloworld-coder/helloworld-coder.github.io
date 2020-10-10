@@ -2,48 +2,32 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <title>
+            checking section width
+        </title>
         <style type="text/css">
-        .container ul
-        {
-            text-transform: uppercase;
-        }
-        .container li
-        {
-            display: inline-block;
-        }
-        .container a {
-  background: #395870;
-  background: linear-gradient(#49708f, #293f50);
-  border-right: 1px solid rgba(0, 0, 0, .3);
-  color: #fff;
-  padding: 12px 20px;
-  text-decoration: none;
-}
-.container a:hover {
-  background: #314b60;
-  box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
-}
-.container li:first-child a {
-  border-radius: 4px 0px 0px 4px;
-}
-.container li:last-child a {
-  border-right: 0;
-  border-radius: 0 4px 4px 0;
-}
-
+            .first
+            {
+                border: 2px solid green;
+                padding: 10px 0px 10px 0;
+                width: 960px;
+                background: grey;
+                color:honeydew;
+            }
+            .first .second
+            {
+                background: hotpink;
+                width:960px;
+            }
         </style>
     </head>
-    <title>
-        Lists
-    </title>
     <body>
-        <nav class="container">
-            <ul>
-                <li><a href="html.html">html</a></li>
-                <li><a href="css.html">css</a></li>
-                <li><a href="django.html">django</a></li>
-                <li><a href="nodejs">nodejs</a></li>
-            </ul>
-        </nav>
+        <section class="first">
+            <h1>The first section</h1>
+            <section class="second">
+                <h3>The second section</h3>
+            </section>
+        </section>
+
     </body>
 </html>
