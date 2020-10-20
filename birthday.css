@@ -1,0 +1,75 @@
+
+.wishes
+{
+    left: 400px;
+    top: 200px;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 400px;
+    position: relative;
+}
+{
+background-color: grey;
+}
+.div1
+{
+background-image: url('baloons.png');
+background-repeat: no-repeat;
+width: 200px;
+height: 800px;
+float: left;
+background-size: 200px 200px;
+}
+.div1
+{
+animation-name: baloon;
+animation-duration: 10s;
+animation-iteration-count: 1;
+
+}
+@keyframes baloon
+{
+0%
+{
+    background-image: url('baloons.png');
+    background-position: left bottom;
+}
+100%
+{
+    background-image: url('baloons.png');
+    background-position: left top;
+
+}
+}
+
+
+.div2
+{
+background-image: url('baloons.png');
+background-repeat: no-repeat;
+width: 200px;
+height: 800px;
+float: right;
+background-size: 200px 200px;
+}
+.div2
+{
+animation-name: baloon;
+animation-duration: 10s;
+animation-iteration-count: 1;
+
+}
+@keyframes baloon
+{
+0%
+{
+    background-image: url('baloons.png');
+    background-position: left bottom;
+}
+100%
+{
+    background-image: url('baloons.png');
+    background-position: left top;
+
+}
+}
