@@ -1,0 +1,65 @@
+CCNA
+
+what is a network?
+    2 computers connected through a wire(cat 5 cable ) the connctor is called as RJ45 that is plugged into the port.
+
+LAN - Local area Network
+
+    In a small area or office, several computers are connected through a networking device using - SWITCH or HUB using each computers IP address.
+
+WAN - wide area Network
+
+    For eg: company is at 2 locations , salem and chennai.
+        The computer in the company have to be connected in both the locations
+        ISP - Here comes the ISP (Internet service provider) locally they provide the connection between salem and chennai.
+            ISP - have high data speed connections to provide service for the WAN fro companies.
+        Jack on the bulding in salem to ISP at salem then to ISP at chennai to Jack at chennai.
+
+Internet are very massive WAN (wan connected to wan to wan ....)where information and communcations are shared using standardised protocols.   
+    - if the distance between the 2 systems is long there might be a delay in network.
+bit and Byte
+    1 Byte = 8 bit
+
+    bit is 0 or 1
+    Byte 0 1 0 0 0 1 1 0 - (8 digit sequence of bits i.e. 0's and 1's)
+
+    Speed is always calculated by bits and data is always calculated by Bytes.
+        Speed - 1 Mbps (mega bit per second)
+        Data - 128 KB file ( Kilo Byte) - 128 KB * 8 = 1024 bits of data i.e. 1 Mbps speed.     
+            so at 1 Mbps speed, 128 kb data can be transferred in a second.
+
+Network Topology
+    Star Topology
+    Ring Topology
+    Bus Topology.
+
+    Star Topology
+        like in a star, all the systems are connected to a central switch.
+
+Day 2 :
+
+ISO - International organisation for standard.
+
+OSI -  Open system interconnect
+
+    "Please do not throw sausage pizza away"
+        
+        7. Application
+        6. Presentation
+        5. Session
+
+        4. Transport
+
+        3. Network
+
+        2. Data link
+        1. Physical.
+
+TCP/IP  
+        4. Application
+
+        3. Transport
+        
+        2. Internet
+        
+        1. Network Interface.

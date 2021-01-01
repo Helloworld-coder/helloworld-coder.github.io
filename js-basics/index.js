@@ -1,5 +1,6 @@
 console.log('Best of luck Jana');
 console.log("Get start now");
+/*
 let name = 'janardhanPerumal';
 
 let person1 = {
@@ -148,23 +149,6 @@ function isPortrait (width,height){
 }
 console.log(isPortrait(100,200));
 
-// fizzBuzz function
-
-function fizzBuzz(input){
-    if (typeof input !== 'number')
-    return 'NaN';
-    if (input % 3 === 0 && input % 5 === 0)
-        return 'FizzBuzz';
-    if (input % 3 === 0)
-        return 'Fizz';
-    if (input % 5 === 0)
-        return 'Buzz';
-}
-
-let output = fizzBuzz('jana')
-console.log(output);
-
-console.log(typeof NaN);
 
 // DEMERIT Points
 
@@ -174,13 +158,13 @@ function checkSpeed(speed){
     let maxSpeed = 70
     let KmPerPoint = 5
     if (speed < maxSpeed + KmPerPoint)
-        return 'ok';
-
+    return 'ok';
+    
     let points = Math.floor((speed-maxSpeed)/KmPerPoint);
     if (points >=5)
-        console.log('License suspened');
+    console.log('License suspened');
     else
-        console.log('points',points)
+    console.log('points',points)
 }
 
 // show numbers
@@ -192,20 +176,212 @@ function showNumbers (limit){
         if (i % 2 === 0) console.log (i,'even');
         else console.log(i,'odd');
     }
-
+    
 }
 
 showNumbers(10);
 
-// test
+// testing loops
+
+for (let i=5;i<=9;i++){
+    console.log('print jana','- you can buddy',i);
+}
+
+for (let i=10;i>=(-2);i--){
+    if (i%2===0) console.log(i,'even');
+    else console.log(i,'odd');
+}
 
 function forInLopp(){
-let friends = ['jana','ram','arun','lax'];
+    let friends = ['jana','ram','arun','lax'];
     for (friend in friends)
     console.log(friend,friends[friend]);}
-forInLopp();
-
-let friends = ['jana','ram','arun','lax'];
-    for (let friend of friends)
+    forInLopp();
+    
+    
+    function forOfLoop(){
+        let friends = ['jana','ram','arun','lax'];
+        for (let friend of friends)
         console.log(friend);
+    }
+    forOfLoop();
 
+    //for of - cannot iterate an object , only array can be iterated
+    
+    let test = "print janaa";{
+        console.log(test);
+    } 
+    
+    let k =1
+    while (k<=4) {
+        console.log(k); k++;
+    }
+    
+    let j = 9;
+    do {
+        if (j%2 !== 0) console.log(j,'even'); 
+        j++;
+    } while (j <= 6);
+    
+    // showonly STRING in the given object
+    
+    const movie = {
+        name : 'spectre',
+        role : 'james bond',
+        signature : 007,
+        rating : 10
+    };
+    
+    //for ( data in movie) {console.log(data,movie[data]);}
+    
+    function showProperties(movie) {
+        for ( let a in movie) {
+            if (typeof movie[a] === 'number') console.log(a,movie[a]);
+        }    
+    }
+    
+    showProperties(movie);
+    
+    
+    // fizzBuzz function
+    
+    function fizzBuzz(input){
+        if (typeof input !== 'number')
+        return 'NaN';
+        if (input % 3 === 0 && input % 5 === 0)
+            return 'FizzBuzz';
+        if (input % 3 === 0)
+            return 'Fizz';
+        if (input % 5 === 0)
+            return 'Buzz';
+    }
+    
+    console.log(fizzBuzz('jana'));
+
+    // sum of multiples of 3 and 5
+
+    function sum(limit){
+        let sum = 0;
+
+        for (i=0;i<=limit;i++)
+            if (i%3==0 || i%5==0)
+                sum +=2;
+        return sum;
+    }
+    
+    console.log(sum(3));
+
+    // calculate grade as per avg marks of given 3 subjects.
+
+let janaScore = [10,20,30,40];
+
+for (let score of janaScore)
+    let totalScore = 0;
+    totalScore = score+totalScore
+    console.log(score);
+
+
+// showStars function ( for loop inside for loop)
+
+function showStars (rows){
+    for (let row=1; row <=rows; row++) {
+        let pattern = ''
+        for (let i=0; i<row; i++)
+            pattern += '*';
+        console.log(pattern);
+    }
+
+}
+showStars(5);
+
+
+// nested loops
+
+function isPrime (limit) {
+        for (let number=2;number<limit;number++)
+            if(limit%number===0)
+                return false;
+            
+        return true;
+}
+
+function showPrimes(numbers){
+    for (let numm=2;numm<=numbers;numm++)
+        if (isPrime(numm)) console.log(numm);
+}
+ 
+showPrimes(10);
+*/
+// objects
+    //objects are key value pairs
+        //key : value
+        // value can be a number, string , function()
+    // A function inside an object is called as method or object method
+    // we can always create/define an object inside an object
+
+    //objects has 2 functions
+        //factory functions 
+            //used to return the function
+        //constructor functions
+            // used to construct a new object using the "this" and "new" as common constructors
+            // the first letter of the constructor will be in capital letter.
+
+// Value types and Reference types.
+    //Value types - Primitives
+        // value types are always copied by their value
+            //let x=2
+            //let y=x
+            //x =4
+            //now value of x is 4 not 2.
+        // Number
+        // Srting
+        // Boolean
+        // Symbol
+        // Undefined
+        // null
+
+    // Reference types
+        // Reference types are objects copied by reference.
+            // let x = {value : 2};
+            // let y = x
+            // x.value = 20
+        // Object
+        // Function
+        // Array
+
+let number = { num1 : 10};
+
+function increase (number) {
+    number.num1++;
+}
+
+increase(number);
+console.log(number);
+
+// any change to the objects in the reference types always changes the value of the object in all the places defined.
+
+
+function forInLopp(){
+    let friends = ['jana','ram','arun','lax'];
+    for (friend in friends)
+    console.log(friend,friends[friend]);}
+    forInLopp();
+    
+    
+    function forOfLoop(){
+        let friends = ['jana','ram','arun','lax'];
+        for (let friend of friends)
+        console.log(friend);
+    }
+    forOfLoop();   
+
+// how to copy an object to another object
+
+const circle = {
+    radius : 1,
+    draw () {
+        console.log('jana')
+    }
+}
+
+console.log();
