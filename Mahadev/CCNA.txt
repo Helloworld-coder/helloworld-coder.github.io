@@ -63,3 +63,113 @@ TCP/IP
         2. Internet
         
         1. Network Interface.
+
+IP - Internet protocols: (4 octets separated by decimals)
+
+    IP's are classified into 5 protocols,
+
+    Class A - 1 to 126 (first octet shoulb be in the range)
+    Class B - 128 to 191 
+    class C - 192 to 223
+    Class D - 224 to 239 - multicast
+    Class E - 240 to 255 - reserved for experimenttal purposes
+    127 is used for loop back address.
+
+    subnet for class A is 255.0.0.0 - 8 ones / 24 zeros(24 subnet masks) ( 2^24 - 2 is the total number of hosts)
+    Subnet for class B is 255.255.0.0 - 16 ones / 16 zeros ( 2^16 - 2 is the total number of hosts)
+    Subnet for class C is 255.255.255.0 - 24 ones / 8 zeros ( 2^8 - 2 is the total number of hosts)
+
+    Cisco recommends the number of hosts should be limited within 500
+
+    Netwrok for each class ends where the subnet is 255 or the Ones ends, in the above example.
+
+    Gateway and IP should be on the same Network.
+
+        Gateway is used when a network wants to connect to other network. as the name it is the gateway to pass through.
+
+    128 64 32 16 8 4 2 1 - total 255.
+
+    each one is called as place holder from 1 to 8 , startting left to right for subnetting.
+
+    Subnetting :
+
+        Borrowing the Zeros and adding as 1's that forms the new network with the below ID'salem    
+
+            Network ID :
+            Broadcast ID : 
+
+Internet Connecting devices :
+
+    Hubs :
+        Hubs are non interlligent devices.
+        Hubs can collide with only one network, the other network if joines will corrupt everything.
+        Hubs are one Broadcast, they just Broadcast it to all ports and couldn't restrict to one.
+        one broadcast domain. - if  a broadcast traffic is received , it forwards it to other ports.
+
+    Bridge : Just an upgrade to hubs and not used anywhere practically.
+
+    Switches :
+        Switch works mainly with Layer 2 information.
+        A switch - learns/Save all the mac id of the systems connected to it within 10 secs powered on.
+        Switches are intelligent devices.
+        Uses the Mac ID(Layer 2 addresss) and IP address(Layer 3 address) to connect to the near by devices on SAME NETWORK.
+        12 or 24 ports - Each port is connected to same network.
+        Cisco switches do not have a power button, only router has a  power button.
+        It is many collison, as the number of ports.
+        one broadcast domain. - if  a broadcast traffic is received , it forwards it to other ports.
+
+
+    Routers :
+        Routers are mainly intelligent devices.
+        A router connectcs devices from one network to other network.
+        A router can limit the broadcast to a particular port.
+        A router usually has a routig table that consists of IP's of all other routers in the same network.
+        ARP - ARP request is sent to get the MAC address.
+        A router strips down the layer2 information and works with the layer 3 information.
+
+DHCP : Dynamic Host configuration protocol
+
+    The first 4 are very critical DHCP - Discovery, Offer, Request, ACK.
+
+    DHCP discovery :
+        Asking for avaliable IP of DHCP servers in the same network.
+    
+    DHCP Offer :
+        The avaliable DHCP servers offers the avaliable reserved IP's to DHCP discovery.
+
+    DHCP request :
+        The DHCP discovery requests to take one of the given IP's to the DHCP Server.
+
+    DHCP ACK :
+        The DHCP server acknowledges (ACK) that, good you can take the IP.
+    
+    DHCP information :
+        DHCP requests when it is neede to obtain more information from DHCP server 
+
+    DHCP release:
+        Used to release the DHCP IP
+
+TCP : it is a connection oriented transmision where both the machines are aware of the communication at the beggining itself.
+    It fisrts build the connecttion and then starts the transmission.
+
+    3 way handshaking 
+    Windowing
+        
+         3 way handshaking :
+            A send the SYN request to B through the network.
+            B acknowledges and says am ready and send backs SYN + ACK to A through the network.
+            A finally acknowledges it with sending an ACK to B through the network.
+
+        Windowing :
+            Transmission of big files .
+                A send 10 files to B. B asks for file 11 after acknowledging the request.
+                A sends 10-100 files to B. B asks for file 101 asks for file 11 after acknowledging the request.
+                As the number of Packets increases, it will reach a point where 1000 is send and B says am waiting for 901.
+                    it means only it can accept 900, not the entire 1000. So capacity is established.
+                The capacity of the device cannot be established earliers,Since different devices have different transmission capacity.
+
+                
+
+
+
+
