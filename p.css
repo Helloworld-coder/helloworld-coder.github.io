@@ -188,6 +188,7 @@ body
     font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-image:url('cakee.JPG');
     background-size:100% 100%;
+    background-repeat: no-repeat;
 }
 .primary-header a, .primary-footer a
 {
