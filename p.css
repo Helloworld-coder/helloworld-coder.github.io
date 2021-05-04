@@ -19,7 +19,7 @@ h1,h3,h4,h5,p
     display: inline-block;
     border-radius: 5px;
     margin: 0px;
-    color: rgb(230, 96, 19);
+    color: rgb(179, 228, 224);
     cursor: progress;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -28,8 +28,8 @@ h1,h3,h4,h5,p
 }
 .btn-alt
 {
-    padding: 10px 30px;
-    border : 5px solid rgb(185, 89, 204);
+    padding: 10px 20px;
+    border : 5px solid rgb(21, 231, 238);
 }
 .hero
 {
