@@ -188,7 +188,7 @@ body
     background-image:url('cakee.JPG');
     background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment:scroll;
 
 }
 .primary-header a, .primary-footer a
