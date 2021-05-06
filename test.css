@@ -123,16 +123,16 @@
 {
     background-image: url('parthi.jpeg');
     widows: 50%;
-    height: 400px;
+    height: 600px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px 400px;
+    background-size: 600px 600px;
 }
 .picture
 {
     animation-name: mams;
-    animation-duration: 10s;
-    animation-iteration-count: 2;
+    animation-duration: 20s;
+    animation-iteration-count: 4;
     animation-delay: 3s;
 }
 @keyframes mams
